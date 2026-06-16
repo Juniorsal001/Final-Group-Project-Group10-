@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<link rel="stylesheet" href="Form.css">
+<body>
+     <header class="navbar">
+        <div class="logo">CitySuper Market <span>SL</span></div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Market.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="Form.html">Create Form</a></li>
+                <li><a href="Login.html"></a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+    
+     <section id="contact" class="form-section">
+        <div class="form-container">
+            <h2>Customer Registration</h2>
+            <p>Join our loyalty program for weekly discounts!</p>
+            <form id="marketForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required placeholder="Juniorsal Kamara">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="Sallieu@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="Address">Address</label>
+                    <input type="text number" id="address" required placeholder="9 Garden Drive">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone number">Phone Number</label>
+                    <input type="number" id="phone number" required placeholder="+23230842941">
+                </div>
+
+                <div class="form-group">
+                    <label for="Date of birth">Date of Birth</label>
+                    <select name="Date of Birth" id="Date of Birth">
+                      <option value="2000">2000</option>  
+                      <option value="2001">2001</option>
+                      <option value="2002">2002</option>
+                      <option value="2003">2003</option>
+                      <option value="2004">2004</option>
+                      <option value="2005">2005</option>
+                      <option value="2006">2006</option>
+                      <option value="2007">2007</option>
+                      <option value="2008">2008</option>
+                      <option value="2009">2009</option>
+                      <option value="2010">2010</option>
+                      <option value="2011">2011</option>
+                      <option value="2012">2012</option>
+                      <option value="2013">2013</option>
+                      <option value="2014">2014</option>
+                      <option value="2015">2015</option>
+                      <option value="2016">2016</option>
+                      <option value="2017">2017</option>
+                      <option value="2018">2018</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="membership">Membership Type</label>
+                    <select id="membership">
+                        <option value="standard">Standard (Nle5)</option>
+                        <option value="premium">Premium (Nle30/mo)</option>
+                    </select>
+                </div>
+                <a href="Sign in.html">login</a>
+                <button type="submit" class="submit-btn">Register Now</button>
+            </form>
+            <div id="form-message" class="hidden"></div>
+        </div>
+    </section>
+
+    <script src="form.js"></script>
+</body>
+</html>

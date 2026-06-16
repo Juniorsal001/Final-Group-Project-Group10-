@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket Eco | Online Store</title>
+    <link rel="stylesheet" href="Market.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">CitySuper Market <span>SL</span></div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="Market.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="Form.html">Create Form</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Fresh Groceries, Delivered Fast</h1>
+            <p>Shop your daily essentials from the comfort of your home.</p>
+            <a href="Product.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Our Featured Products</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="c:\Users\user\Desktop\Group Project For Web\Images Folder\vegitable.jpg" alt="Fresh Vegetables">
+                <div class="product-info">
+                    <h3>Organic Veggie Box</h3>
+                    <p class="price">Nle250.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Organic Veggie Box', 15.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="c:\Users\user\Desktop\Group Project For Web\Images Folder\apple.jpg" alt="Fresh Apples">
+                <div class="product-info">
+                    <h3>Crisp Honeycrisp Apples</h3>
+                    <p class="price">Nle30.50</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Crisp Honeycrisp Apples', 4.50)">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="c:\Users\user\Desktop\Group Project For Web\Images Folder\Banana.jpg" alt="Bananas">
+                <div class="product-info">
+                    <h3>Organic Bananas (Bundle)</h3>
+                    <p class="price">Nle20.20</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Organic Bananas (Bundle)', 3.20)">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart" onclick="toggleCart()">✕</span>
+        </div>
+        <div id="cart-items">
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <h4>Total: Nle<span id="cart-total">0.00</span></h4>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SuperMarket Eco. All rights reserved.</p>
+    </footer>
+
+    <script src="Market.js"></script>
+
+</body>
+</body>
+</html>

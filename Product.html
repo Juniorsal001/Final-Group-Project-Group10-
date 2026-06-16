@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket Eco</title>
+    <link rel="stylesheet" href="Product.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">CitySuper Market <span class="green-text">SL</span></div>
+        <nav>
+            <ul id="navLinks">
+                <li><a href="Market.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="Form.html">Create Form</a></li>
+                <li><a href="Login.html"></a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon-container" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main class="market-container">
+        
+        <section class="product-detail-card">
+            <div class="product-image">
+                <img src="c:\Users\user\Desktop\Group Project For Web\Images Folder\vegitable.jpg" alt="Organic Veggie Box">
+            </div>
+            <div class="product-info">
+                <span class="badge">ORGANIC & FRESH</span>
+                <h1 class="product-title">Organic Veggie Box</h1>
+                <div class="rating">⭐⭐⭐⭐⭐ <span>(24 reviews)</span></div>
+                <div class="price-tag">Nle 250.00</div>
+                <p class="description">Our signature Organic Veggie Box is packed fresh daily with premium, locally-sourced seasonal vegetables. Completely pesticide-free.</p>
+                
+                <div class="purchase-actions">
+                    <div class="qty-selector">
+                        <button class="qty-btn minus-btn">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus-btn">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Shopping Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-spacer"></div>
+
+        <section class="product-detail-card">
+            <div class="product-image">
+                <img src="c:\Users\user\Desktop\Group Project For Web\Images Folder\apple.jpg" alt="Crisp Honeycrisp Apples">
+            </div>
+            <div class="product-info">
+                <span class="badge">ORGANIC & FRESH</span>
+                <h1 class="product-title">Crisp Honeycrisp Apples</h1>
+                <div class="rating">⭐⭐⭐⭐⭐ <span>(18 reviews)</span></div>
+                <div class="price-tag">Nle 30.50</div>
+                <p class="description">Our Crisp Honeycrisp Apples are exceptionally sweet, juicy, and crisp. Hand-picked from sustainable local orchards.</p>
+                
+                <div class="purchase-actions">
+                    <div class="qty-selector">
+                        <button class="qty-btn minus-btn">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" readonly>
+                        <button class="qty-btn plus-btn">+</button>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Shopping Cart</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        
+        <div id="cart-items" class="cart-items-body">
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+        
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total:</span>
+                <span>Nle <span id="cart-total">0.00</span></span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="Product.js"></script>
+</body>
+</html>

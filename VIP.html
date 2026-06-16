@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Portal - SuperMarket Eco</title>
+    <link rel="stylesheet" href="VIP.css">
+</head>
+<body>
+
+    <div class="login-container">
+        
+        <div class="login-card" id="passcodeGate">
+            <div class="brand-header">
+                <h1 class="brand-logo">Customer <span class="eco-text">Portal</span></h1>
+                <p class="subtitle">Enter your private 4-digit security code</p>
+            </div>
+
+            <div class="passcode-container">
+                <input type="text" class="passcode-input" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+                <input type="text" class="passcode-input" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+                <input type="text" class="passcode-input" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+                <input type="text" class="passcode-input" maxlength="1" pattern="[0-9]" inputmode="numeric" required>
+            </div>
+
+            <div class="form-actions" style="justify-content: center; margin-bottom: 0;">
+                <a href="Sign in.html" class="back-link">Cancel and Go Back</a>
+            </div>
+        </div>
+
+        <div class="login-card" id="mainCustomerDashboard" style="display: none; max-width: 600px;">
+            <div class="brand-header">
+                <h1 class="brand-logo">Welcome back, <span class="eco-text">VIP Shopper</span>!</h1>
+                <p class="subtitle">Your Exclusive Regular Customer Zone</p>
+            </div>
+            
+            <div style="background-color: #e8f5e9; padding: 20px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+                <h3 style="color: #2e7d32; margin-bottom: 5px;">🎉 Weekly Special Loyalty Offer</h3>
+                <p style="font-size: 0.9rem; color: #388e3c;">Get 15% off across all fresh produce categories this weekend using your profile ID card.</p>
+            </div>
+
+            <p style="font-size: 0.95rem; color: #333; margin-bottom: 25px; line-height: 1.6;">
+                Here you can view exclusive discount charts, cross-check cumulative shopping vouchers, track active cart balances, or quickly access priority customer checkout assistance lanes.
+            </p>
+
+            <button class="primary-btn" onclick="window.location.reload()">Lock Portal / Log Out</button>
+        </div>
+
+    </div>
+
+    <script src="VIP.js"></script>
+</body>
+</html>
